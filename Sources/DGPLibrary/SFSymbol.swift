@@ -10,7 +10,7 @@ import UIKit
 
 // MARK:- Image
 extension UIImage {
-    convenience init?(symbol: SFSymbol) {
+    public convenience init?(symbol: SFSymbol) {
         self.init(systemName: symbol.rawValue)
     }
 }

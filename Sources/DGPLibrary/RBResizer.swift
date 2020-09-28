@@ -7,8 +7,8 @@
 //
 import UIKit
 
-class RBResizer {
-    static func RBSquareImage(image: UIImage) -> UIImage {
+public class RBResizer {
+    static public func RBSquareImage(image: UIImage) -> UIImage {
         let originalWidth  = image.size.width
         let originalHeight = image.size.height
         
@@ -33,7 +33,7 @@ class RBResizer {
         }
     }
 
-    static func RBResizeImage(image: UIImage, targetSize: CGSize) -> UIImage {
+    static public func RBResizeImage(image: UIImage, targetSize: CGSize) -> UIImage {
         let size = image.size
         
         let widthRatio  = targetSize.width  / image.size.width

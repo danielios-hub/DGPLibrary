@@ -9,10 +9,10 @@
 import Foundation
 import UIKit
 
-class SpinnerViewController: UIViewController {
-    var spinner = UIActivityIndicatorView(style: .large)
+public class SpinnerViewController: UIViewController {
+    private var spinner = UIActivityIndicatorView(style: .large)
 
-    override func loadView() {
+    override public func loadView() {
         view = UIView()
         self.view.backgroundColor = .clear
         //view.backgroundColor = UIColor(white: 0, alpha: 0.7)
@@ -25,7 +25,7 @@ class SpinnerViewController: UIViewController {
         spinner.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     }
     
-    func show(controller: UIViewController) {
+    public func show(controller: UIViewController) {
         // add the spinner view controller
         controller.addChild(self)
         self.view.frame = controller.view.frame
@@ -33,7 +33,7 @@ class SpinnerViewController: UIViewController {
         self.didMove(toParent: self)
     }
     
-    func hide() {
+    public func hide() {
         self.willMove(toParent: nil)
         self.view.removeFromSuperview()
         self.removeFromParent()
