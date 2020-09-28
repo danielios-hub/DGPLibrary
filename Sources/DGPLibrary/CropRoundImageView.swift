@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CropRoundImageView: UIImageView {
+public class CropRoundImageView: UIImageView {
 
     fileprivate var _crop = false
     fileprivate var _rounded = false
@@ -27,7 +27,7 @@ class CropRoundImageView: UIImageView {
         }
     }
     
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
     }
     
