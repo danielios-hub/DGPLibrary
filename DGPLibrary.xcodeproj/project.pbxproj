@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -21,8 +21,6 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		C7A44A8D2522264E005A1A83 /* DGPExtensionCore in Frameworks */ = {isa = PBXBuildFile; productRef = C7A44A8C2522264E005A1A83 /* DGPExtensionCore */; };
-		C7A44A8E2522264E005A1A83 /* DGPExtensionCore in Embed Frameworks */ = {isa = PBXBuildFile; productRef = C7A44A8C2522264E005A1A83 /* DGPExtensionCore */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		OBJ_30 /* Checkmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Checkmark.swift */; };
 		OBJ_31 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* ConnectionManager.swift */; };
 		OBJ_32 /* CropRoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* CropRoundImageView.swift */; };
@@ -60,7 +58,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C7A44A8E2522264E005A1A83 /* DGPExtensionCore in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,7 +86,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				C7A44A8D2522264E005A1A83 /* DGPExtensionCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,7 +127,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -140,7 +136,6 @@
 				OBJ_21 /* Products */,
 				OBJ_24 /* README.md */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -184,7 +179,6 @@
 			);
 			name = DGPLibrary;
 			packageProductDependencies = (
-				C7A44A8C2522264E005A1A83 /* DGPExtensionCore */,
 			);
 			productName = DGPLibrary;
 			productReference = "DGPLibrary::DGPLibrary::Product" /* DGPLibrary.framework */;
@@ -223,9 +217,8 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			packageReferences = (
-				C7A44A8B2522264E005A1A83 /* XCRemoteSwiftPackageReference "dgpextensioncore" */,
 			);
 			productRefGroup = OBJ_21 /* Products */;
 			projectDirPath = "";
@@ -290,10 +283,7 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = DGPLibrary.xcodeproj/DGPLibrary_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -321,10 +311,7 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = DGPLibrary.xcodeproj/DGPLibrary_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -387,8 +374,7 @@
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				USE_HEADERMAP = NO;
 			};
 			name = Release;
@@ -417,11 +403,7 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = DGPLibrary.xcodeproj/DGPLibraryTests_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@loader_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -446,11 +428,7 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = DGPLibrary.xcodeproj/DGPLibraryTests_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@loader_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -503,25 +481,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		C7A44A8B2522264E005A1A83 /* XCRemoteSwiftPackageReference "dgpextensioncore" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://daniel_ios@bitbucket.org/daniel_ios/dgpextensioncore.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.7;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		C7A44A8C2522264E005A1A83 /* DGPExtensionCore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C7A44A8B2522264E005A1A83 /* XCRemoteSwiftPackageReference "dgpextensioncore" */;
-			productName = DGPExtensionCore;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = OBJ_1 /* Project object */;
 }
