@@ -3,10 +3,10 @@
     "pins": [
       {
         "package": "DGPExtensionCore",
-        "repositoryURL": "https://daniel_ios@bitbucket.org/daniel_ios/dgpextensioncore.git",
+        "repositoryURL": "https://github.com/danielios-hub/DGPExtensionCore",
         "state": {
           "branch": "master",
-          "revision": "4d20934591151ba9a22e1ff8b4b4c61455d4f8cd",
+          "revision": "4214a92263bd2b1b017f83138b8a05c8880cef9c",
           "version": null
         }
       }

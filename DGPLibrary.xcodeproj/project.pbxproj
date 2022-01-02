@@ -21,8 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		C79B3DDE25236D4500AFBBCD /* DGPExtensionCore in Frameworks */ = {isa = PBXBuildFile; productRef = C79B3DDD25236D4500AFBBCD /* DGPExtensionCore */; };
-		C79B3DDF25236D4500AFBBCD /* DGPExtensionCore in Embed Frameworks */ = {isa = PBXBuildFile; productRef = C79B3DDD25236D4500AFBBCD /* DGPExtensionCore */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		C7013B1B2781FC85001239C4 /* DGPExtensionCore in Frameworks */ = {isa = PBXBuildFile; productRef = C7013B1A2781FC85001239C4 /* DGPExtensionCore */; };
 		OBJ_30 /* Checkmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Checkmark.swift */; };
 		OBJ_31 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* ConnectionManager.swift */; };
 		OBJ_32 /* CropRoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* CropRoundImageView.swift */; };
@@ -60,7 +59,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C79B3DDF25236D4500AFBBCD /* DGPExtensionCore in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,7 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				C79B3DDE25236D4500AFBBCD /* DGPExtensionCore in Frameworks */,
+				C7013B1B2781FC85001239C4 /* DGPExtensionCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,7 +181,7 @@
 			);
 			name = DGPLibrary;
 			packageProductDependencies = (
-				C79B3DDD25236D4500AFBBCD /* DGPExtensionCore */,
+				C7013B1A2781FC85001239C4 /* DGPExtensionCore */,
 			);
 			productName = DGPLibrary;
 			productReference = "DGPLibrary::DGPLibrary::Product" /* DGPLibrary.framework */;
@@ -224,7 +222,7 @@
 			);
 			mainGroup = OBJ_5;
 			packageReferences = (
-				C79B3DDC25236D4500AFBBCD /* XCRemoteSwiftPackageReference "dgpextensioncore" */,
+				C7013B192781FC85001239C4 /* XCRemoteSwiftPackageReference "DGPExtensionCore" */,
 			);
 			productRefGroup = OBJ_21 /* Products */;
 			projectDirPath = "";
@@ -504,9 +502,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		C79B3DDC25236D4500AFBBCD /* XCRemoteSwiftPackageReference "dgpextensioncore" */ = {
+		C7013B192781FC85001239C4 /* XCRemoteSwiftPackageReference "DGPExtensionCore" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://daniel_ios@bitbucket.org/daniel_ios/dgpextensioncore.git";
+			repositoryURL = "https://github.com/danielios-hub/DGPExtensionCore";
 			requirement = {
 				branch = master;
 				kind = branch;
@@ -515,9 +513,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C79B3DDD25236D4500AFBBCD /* DGPExtensionCore */ = {
+		C7013B1A2781FC85001239C4 /* DGPExtensionCore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C79B3DDC25236D4500AFBBCD /* XCRemoteSwiftPackageReference "dgpextensioncore" */;
+			package = C7013B192781FC85001239C4 /* XCRemoteSwiftPackageReference "DGPExtensionCore" */;
 			productName = DGPExtensionCore;
 		};
 /* End XCSwiftPackageProductDependency section */
